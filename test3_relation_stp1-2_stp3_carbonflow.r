@@ -34,6 +34,11 @@ dbDisconnect(db1)    # close the file
 # Make a plot with ggplot, volume, colored by species....
 
 library(ggplot2)
+landscape <- ggplot(landscape, aes(year,volume_m3, fill=species))+
+  geom_area() + ggtitle("Cz Landscape scale wood volume m3/ha")
+landscape+ theme(plot.title =element_text(hjust = 0.5))
+
+
 ggplot(carbonflow, aes(year,GPP))+
   geom_area()
 
@@ -89,6 +94,10 @@ dbDisconnect(db1)    # close the file
 # Make a plot with ggplot, volume, colored by species....
 
 library(ggplot2)
+landscape <- ggplot(landscape, aes(year,volume_m3, fill=species))+
+  geom_area() + ggtitle("Cz Landscape scale wood volume m3/ha")
+landscape+ theme(plot.title =element_text(hjust = 0.5))
+
 ggplot(carbonflow, aes(year,GPP))+
   geom_area()
 
