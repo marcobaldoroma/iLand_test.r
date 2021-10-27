@@ -2,12 +2,12 @@
 ############################################   STP3      management    #######################################
 
 
-# install.packages("RSQLite")
+install.packages("RSQLite")
 library(RSQLite)
 
 
 
-file<-"D:/iLand/TEST3_folder/output/subregion_medium_test1.sqlite"   # file to read
+file <-"D:/iLand/TEST3_folder/output/subregion_medium_test1.sqlite"   # file to read
 
 
 sqlite.driver <- dbDriver("SQLite")
